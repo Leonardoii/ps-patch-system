@@ -67,7 +67,7 @@ jobs:
     - name: Checkout Update PS5 SDK
       uses: actions/checkout@main
       with:
-        repository: https://github.com/ps5-payload-dev/sdk
+        repository: ps5-payload-dev/sdk
 
     - name: Install update PS5 SDK
       run: make "DESTDIR=${{ env.PS5_PAYLOAD_SDK }}" clean install -j "$(nproc)"
